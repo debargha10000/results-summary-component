@@ -147,6 +147,7 @@ p {
   /*   border-radius */
   text-decoration: none;
   font-family: "global-font";
+  font-size: 18px;
   background: hsl(224, 30%, 27%);
   color: white;
 }
