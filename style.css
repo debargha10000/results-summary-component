@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "global-font";
+  src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
 *,
 *::after,
 *::before {
@@ -5,6 +9,18 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  font-family: "global-font";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -22,5 +38,134 @@ body {
   grid-template-columns: 1fr 1fr;
   width: 736px;
   height: 512px;
-  background-color: aqua;
+  border-radius: 34px;
+  -webkit-box-shadow: 30px 30px 70px -25px rgb(229, 232, 255);
+  -moz-box-shadow: 30px 30px 70px -25px rgb(229, 232, 255);
+  box-shadow: 30px 30px 70px -25px rgb(229, 232, 255);
 }
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 34px;
+  color: hsl(241, 100%, 89%);
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+  padding: 0 60px;
+}
+.left-side .left-heading {
+  font-size: 22px;
+  top: 0;
+  padding: 34px 0;
+}
+.left-side .result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+.left-side .result h1 {
+  font-size: 400%;
+  color: hsl(0, 0%, 100%);
+}
+.left-side .result h4 {
+  font-size: 18px;
+  color: hsl(246, 100%, 74%);
+}
+.left-side .message h2 {
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+  padding: 32px 0 18px 0;
+}
+.left-side .message p {
+  font-size: 18px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  color: hsl(224, 30%, 27%);
+}
+.right-side .right-heading {
+  text-align: left;
+  align-items: left;
+  padding: 34px 0 10px 0;
+  font-size: 22px;
+}
+.right-side .stats div {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.76fr;
+  height: 56px;
+  border-radius: 12px;
+  margin: 16px 0;
+  font-size: 18px;
+  align-items: center;
+}
+.right-side .stats div:nth-of-type(1) {
+  background: hsla(0, 100%, 67%, 0.05);
+}
+.right-side .stats div:nth-of-type(1) h4 {
+  color: hsl(0, 100%, 67%);
+}
+.right-side .stats div:nth-of-type(2) {
+  background: hsla(39, 100%, 56%, 0.05);
+}
+.right-side .stats div:nth-of-type(2) h4 {
+  color: hsl(39, 100%, 56%);
+}
+.right-side .stats div:nth-of-type(3) {
+  background: hsla(166, 100%, 37%, 0.05);
+}
+.right-side .stats div:nth-of-type(3) h4 {
+  color: hsl(166, 100%, 37%);
+}
+.right-side .stats div:nth-of-type(4) {
+  background: hsla(234, 85%, 45%, 0.05);
+}
+.right-side .stats div:nth-of-type(4) h4 {
+  color: hsl(234, 85%, 45%);
+}
+.right-side .stats div img {
+  justify-self: center;
+}
+.right-side .stats div span {
+  color: hsl(0, 0%, 60%);
+}
+.right-side button {
+  width: 100%;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  margin: 25px 0;
+  /*   border-radius */
+  text-decoration: none;
+  font-family: "global-font";
+  background: hsl(224, 30%, 27%);
+  color: white;
+}
+.right-side button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  animation-name: color-change;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes color-change {
+  0% {
+    background: hsl(224, 30%, 27%);
+  }
+  50% {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+  100% {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+}/*# sourceMappingURL=style.css.map */
