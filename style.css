@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "global-font";
-  src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
 *,
 *::after,
 *::before {
@@ -11,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "global-font";
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 h1,
@@ -145,7 +142,7 @@ p {
   cursor: pointer;
   margin: 25px 0;
   text-decoration: none;
-  font-family: "global-font";
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: 18px;
   background: hsl(224, 30%, 27%);
   color: white;
@@ -188,12 +185,15 @@ p {
     box-shadow: none;
   }
   .left-side {
-    height: 43.5vh;
+    height: 43vh;
     border-radius: 0 0 34px 34px;
   }
   .left-side .left-heading {
     font-size: 15px;
-    padding: 24px 0 20px 0;
+    padding: 10px 0 0 0;
+  }
+  .left-side .left-heading h3 {
+    margin: 28px 0 15px 0;
   }
   .left-side .result {
     width: 140px;
@@ -208,7 +208,7 @@ p {
   }
   .left-side .message h2 {
     font-size: 22px;
-    padding: 30px 0 10px 0;
+    padding: 25px 0 10px 0;
   }
   .left-side .message p {
     font-size: 15px;
