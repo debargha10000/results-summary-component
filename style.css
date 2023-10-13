@@ -154,6 +154,29 @@ p {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+.attribution {
+  padding: 10px 0 0 0;
+  font-size: large;
+}
+.attribution a {
+  text-decoration: none;
+  background-image: linear-gradient(45deg, #fccf31, #f55555);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400%;
+  animation: bg-animation 3s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
 @media screen and (max-width: 750px) {
   .display {
     align-items: start;
@@ -162,6 +185,7 @@ p {
     grid-template-columns: 1fr;
     width: 100vw;
     height: 100vh;
+    box-shadow: none;
   }
   .left-side {
     height: 43.5vh;
@@ -201,5 +225,9 @@ p {
   }
   .right-side .continue {
     margin: 8px 0;
+  }
+  .attribution {
+    text-align: center;
+    align-self: center;
   }
 }/*# sourceMappingURL=style.css.map */

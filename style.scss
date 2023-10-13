@@ -37,6 +37,7 @@ $font-l-mob: 22px;
 $font-md-mob: 15px;
 $font-sm-mob: 15px;
 
+$gradient: linear-gradient(45deg, #fccf31, #f55555);
 @font-face {
   font-family: "global-font";
   src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
@@ -203,6 +204,29 @@ p {
     background: linear-gradient($light-slate-blue, $light-royal-blue);
   }
 }
+.attribution {
+  padding: 10px 0 0 0;
+  font-size: large;
+  a {
+    text-decoration: none;
+    background-image: $gradient;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
 
 @media screen and (max-width: 750px) {
   .display {
@@ -212,6 +236,7 @@ p {
     grid-template-columns: 1fr;
     width: 100vw;
     height: 100vh;
+    box-shadow: none;
   }
   .left-side {
     height: 43.5vh;
@@ -255,5 +280,10 @@ p {
     .continue {
       margin: 8px 0;
     }
+  }
+  .attribution {
+    text-align: center;
+    // align-items: center;
+    align-self: center;
   }
 }
