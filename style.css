@@ -144,7 +144,6 @@ p {
   border: none;
   cursor: pointer;
   margin: 25px 0;
-  /*   border-radius */
   text-decoration: none;
   font-family: "global-font";
   font-size: 18px;
@@ -153,23 +152,8 @@ p {
 }
 .right-side button:hover {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  animation-name: color-change;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
 }
 
-@keyframes color-change {
-  0% {
-    background: hsl(224, 30%, 27%);
-  }
-  50% {
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  }
-  100% {
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  }
-}
 @media screen and (max-width: 750px) {
   .display {
     align-items: start;

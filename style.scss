@@ -77,9 +77,7 @@ p {
   grid-template-columns: 1fr 1fr;
   width: 736px;
   height: 512px;
-  // background-color: aqua;
   border-radius: $round-border;
-  // overflow: hidden;
   -webkit-box-shadow: 30px 30px 70px -25px rgba(229, 232, 255, 1);
   -moz-box-shadow: 30px 30px 70px -25px rgba(229, 232, 255, 1);
   box-shadow: 30px 30px 70px -25px rgba(229, 232, 255, 1);
@@ -88,7 +86,6 @@ p {
 .left-side {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   border-radius: $round-border;
   color: $light-lavender;
@@ -130,7 +127,6 @@ p {
     }
     p {
       font-size: $font-sm;
-      // padding-bottom: 56px;
     }
   }
 }
@@ -138,11 +134,8 @@ p {
 .right-side {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
   padding: 0 40px;
   color: $dark-gray-blue;
-  // font-size: $font-sm;
 
   .right-heading {
     text-align: left;
@@ -185,8 +178,6 @@ p {
         }
       }
       img {
-        // align-items: center;
-        // justify-content: center;
         justify-self: center;
       }
       span {
@@ -202,43 +193,15 @@ p {
     border: none;
     cursor: pointer;
     margin: 25px 0;
-    /*   border-radius */
     text-decoration: none;
     font-family: "global-font";
     font-size: $font-sm;
     background: $dark-gray-blue;
     color: white;
-    // transition: all 0.5s ease-in-out;
   }
   button:hover {
     background: linear-gradient($light-slate-blue, $light-royal-blue);
-    // background: white;
-    // color: black;
-    animation-name: color-change;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    // border: black solid 1px;
-    // transition: all m;
   }
-}
-
-@keyframes color-change {
-  0% {
-    background: $dark-gray-blue;
-  }
-  // 50% {
-  //   background: $dark-gray-blue;
-  // }
-  50% {
-    background: linear-gradient($light-slate-blue, $light-royal-blue);
-  }
-  100% {
-    background: linear-gradient($light-slate-blue, $light-royal-blue);
-  }
-  // 100% {
-  //   // background: white;
-  // }
 }
 
 @media screen and (max-width: 750px) {
