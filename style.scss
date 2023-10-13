@@ -240,7 +240,7 @@ p {
   }
   .left-side {
     height: 43.5vh;
-    border-radius: 0 0 $round-border $round-border;
+    border-radius: 0 0 $round-border-mob $round-border-mob;
     .left-heading {
       font-size: $font-md-mob;
       padding: 24px 0 20px 0;
@@ -283,7 +283,6 @@ p {
   }
   .attribution {
     text-align: center;
-    // align-items: center;
     align-self: center;
   }
 }
