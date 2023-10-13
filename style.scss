@@ -20,13 +20,22 @@ $light-lavender: hsl(241, 100%, 89%);
 $light-lavender-dark: hsl(246, 100%, 74%);
 $dark-gray-blue: hsl(224, 30%, 27%);
 $text-light: hsl(0, 0%, 60%);
+
 $round-border: 34px;
 $circle-radius: 100px;
 
-$font-xl: 400%;
+$font-xl: 64px;
 $font-l: 30px;
 $font-md: 22px;
 $font-sm: 18px;
+
+$round-border-mob: 34px;
+$circle-radius-mob: 70px;
+
+$font-xl-mob: 52px;
+$font-l-mob: 22px;
+$font-md-mob: 15px;
+$font-sm-mob: 15px;
 
 @font-face {
   font-family: "global-font";
@@ -101,7 +110,7 @@ p {
     width: calc($circle-radius * 2);
     height: calc($circle-radius * 2);
     border-radius: $circle-radius;
-    background: linear-gradient($violet-blue, $persian-blue);
+    background: linear-gradient(180deg, $violet-blue, $persian-blue);
 
     h1 {
       font-size: $font-xl;
@@ -140,8 +149,6 @@ p {
     align-items: left;
     padding: 34px 0 10px 0;
     font-size: $font-md;
-    h3 {
-    }
   }
   .stats {
     div {
@@ -232,4 +239,58 @@ p {
   // 100% {
   //   // background: white;
   // }
+}
+
+@media screen and (max-width: 750px) {
+  .display {
+    align-items: start;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    width: 100vw;
+    height: 100vh;
+  }
+  .left-side {
+    height: 43.5vh;
+    border-radius: 0 0 $round-border $round-border;
+    .left-heading {
+      font-size: $font-md-mob;
+      padding: 24px 0 20px 0;
+    }
+    .result {
+      width: calc($circle-radius-mob * 2);
+      height: calc($circle-radius-mob * 2);
+      border-radius: $circle-radius-mob;
+      h1 {
+        font-size: $font-xl-mob;
+      }
+      h4 {
+        font-size: $font-sm-mob;
+      }
+    }
+    .message {
+      h2 {
+        font-size: $font-l-mob;
+        padding: 30px 0 10px 0;
+      }
+      p {
+        font-size: $font-sm-mob;
+      }
+    }
+  }
+  .right-side {
+    padding: 0 30px;
+    .right-heading {
+      padding: 28px 0 8px 0;
+      font-size: $font-md-mob;
+    }
+    .stats {
+      div {
+        font-size: $font-sm-mob;
+      }
+    }
+    .continue {
+      margin: 8px 0;
+    }
+  }
 }
